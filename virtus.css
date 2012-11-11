@@ -1,0 +1,270 @@
+/* ==BASE */
+html {
+	background: #080904;
+}
+
+body {
+	font-size: 10px;
+	font-family: Helvetica;
+}
+
+/* ==PAGE */
+#page {
+	width: 500px;
+	margin: 0 auto;
+}
+
+/* ==HEADER */
+header {
+	margin-top: 30px;
+	color: #EFEFEF;
+	width: 100%;
+	float: left;
+}
+
+/* ===HEADERS */
+header hgroup {
+	width: 200px;
+	float: left;
+	text-transform: uppercase;
+}
+
+header hgroup h1 {
+	font-size: 360%;
+}
+
+header hgroup h2 {
+	margin-top: 15px;
+	font-size: 240%;
+}
+
+header hgroup h2, header section#records th, section#calendar tbody td.week.points {
+	color: #CCC;	
+}
+
+/* ===RECORDS */
+header section#records {
+	width: 300px;
+	float: right;
+	font-size: 180%;
+	line-height: 1.5em;
+}
+
+header section#records th {
+	width: 160px;
+	font-style: italic;
+}
+
+header section#records td {
+/*	margin-left: 20px;*/
+	width: 180px;
+}
+
+/* ==CALENDAR */
+section#calendar {
+	float: left;
+	margin-top: 50px;
+}
+
+section#calendar table {
+	width: 100%;
+}
+
+/* ===HEADERS */
+section#calendar thead {
+	float: left;
+	margin-bottom: 5px;
+}
+
+section#calendar thead th, section#calendar tbody th, section#calendar tbody td, section#calendar tbody td.virtue a {
+	width: 20px;
+	height: 20px;
+}
+
+section#calendar thead th {
+	display: block;
+	-webkit-transform: rotate(-70deg);
+	-moz-transform: rotate(-60deg);	
+	color: #FFF;
+	font-size: 140%;
+	text-align: left;
+	margin:0 1px;
+	line-height: 25px;
+/*	background: blue;*/
+	float: left;
+}
+
+section#calendar thead th#weekcolumn, section#calendar thead th#daycolumn, section#calendar thead th#commentcolumn {
+	visibility: hidden;
+}
+
+/* ===CELLS */
+section#calendar tbody tr {
+	float: left;
+	width: 100%;
+/*	margin-bottom: 20px;*/
+}
+section#calendar tbody th, section#calendar tbody td {
+	display: block;
+	float: left;
+/*	background: #3D3D3D;*/
+	border: 1px solid #333;
+}
+
+/* ===WEEKS */
+section#calendar tbody td.week, section#calendar tbody th.day {
+	border-style: none;
+	margin-top: 1px;
+	color: #FFF;
+	line-height: 20px;
+	text-align: center;
+	font-size: 140%;
+}
+
+section#calendar tbody td.week {
+	font-size: 180%;
+}
+
+section#calendar tbody td.week.number {
+	font-weight: bold;
+}
+
+/* ===VIRTUES */
+section#calendar tbody td.virtue a {
+	display: block;
+	text-indent: -100000px;
+}
+
+section#calendar tbody td.virtue.true a {
+	background: red;
+}
+
+section#calendar tbody td.virtue a:hover {
+	background: blue;
+}
+
+/* ====SPLIT */
+section#calendar tbody td.virtue.parts2, section#calendar tbody td.virtue.parts2 a {
+	width: 10px;
+}
+
+section#calendar tbody td.virtue.parts2.part1 {
+	border-right: none;
+}
+
+section#calendar tbody td.virtue.parts2.part2 {
+	border-left: none;
+}
+
+/* ====COLORS */
+section#calendar thead th.virtue.vigor {
+	color: #FAC017;
+}
+
+section#calendar tbody td.virtue.vigor.true a {
+	background: #FAC017;
+}
+
+section#calendar tbody td.virtue.vigor a:hover {
+	background: #FDDC7E;
+}
+
+section#calendar thead th.virtue.moderation {
+	color: #0F7AFA;
+}
+
+section#calendar tbody td.virtue.moderation.true a {
+	background: #0F7AFA;
+}
+
+section#calendar tbody td.virtue.moderation a:hover {
+	background: #7AB5FD;
+}
+
+section#calendar thead th.virtue.purity {
+	color: #288207;
+}
+
+section#calendar tbody td.virtue.purity.true a {
+	background: #288207;
+}
+
+section#calendar tbody td.virtue.purity a:hover {
+	background: #77C15C;
+}
+
+section#calendar thead th.virtue.peace {
+	color: #499948;
+}
+
+section#calendar tbody td.virtue.peace.true a {
+	background: #499948;
+}
+
+section#calendar tbody td.virtue.peace a:hover {
+	background: #91CC91;
+}
+
+section#calendar thead th.virtue.amiability {
+	color: #7652BE;
+}
+
+section#calendar tbody td.virtue.amiability.true a {
+	background: #7652BE;
+}
+
+section#calendar tbody td.virtue.amiability a:hover {
+	background: #B099DF;
+}
+
+section#calendar thead th.virtue.courage {
+	color: #D80018;
+}
+
+section#calendar tbody td.virtue.courage.true a {
+	background: #D80018;
+}
+
+section#calendar tbody td.virtue.courage a:hover {
+	background: #EC6A79;
+}
+
+section#calendar thead th.virtue.integrity {
+	color: #FF6600;
+}
+
+section#calendar tbody td.virtue.integrity.true a {
+	background: #FF6600;
+}
+
+section#calendar tbody td.virtue.integrity a:hover {
+	background: #FFAB73;
+}
+
+/* ===SECTIONS */
+section#calendar tbody > tr:first-child th, section#calendar tbody > tr:first-child td {
+	border-top-color: #fff;
+	margin-top: 0;
+	border-top-style: solid;
+}
+
+/* ===COMMENTS */
+section#calendar tbody td.comment {
+	width: 300px;
+}
+
+section#calendar tbody td.comment input {
+	border: 0;
+	background: transparent;
+	font-size: 140%;
+	color: #FFF;
+	padding: 4px;
+	width: 290px;
+}
+
+/* ==FOOTER */
+footer {
+	float: left;
+	height: 30px;
+	text-indent: -10000px;
+}

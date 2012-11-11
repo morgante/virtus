@@ -1,0 +1,102 @@
+/* ==BASE */
+html {
+	background: #080904;
+}
+
+body {
+	font-size: 10px;
+	font-family: Helvetica;
+}
+
+/* ==HEADER */
+header {
+	display: none;
+}
+
+/* ==VIRTUES */
+#virtues li {
+	display: block;
+	position: relative;
+	border: 2px solid #FFF;
+}
+
+#virtues li, #virtues li a, #virtues li span {
+	height: 10px;
+}
+
+#virtues li a {
+	display: block;
+	margin: 0;
+	line-height: 10px;
+	text-align: center;
+	font-size: 200%;
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	color: #FFF;
+}
+
+#virtues li span {
+	display: block;
+	float: left;
+	text-indent: -100000px;
+	width: 0%;
+	-webkit-transition: width 0.5s linear;
+}
+
+#virtues li span.true.parts1 {
+	width: 100%;
+}
+
+#virtues li span.true.parts2 {
+	width: 50%;
+}
+
+#virtues li span.false {
+	width: 0%;
+}
+
+#virtues li span.true {
+	background: #FFF;
+}
+
+/* ====COLORS */
+#virtues li.virtue span.vigor.true {
+	background: #FAC017;
+}
+
+#virtues li.virtue span.moderation.true {
+	background: #0F7AFA;
+}
+
+#virtues li.virtue span.purity.true {
+	background: #288207;
+}
+
+#virtues li.virtue span.peace.true {
+	background: #499948;
+}
+
+#virtues li.virtue span.amiability.true {
+	background: #7652BE;
+}
+
+#virtues li.virtue span.courage.true {
+	background: #D80018;
+}
+
+#virtues li.virtue span.integrity.true {
+	background: #FF6600;
+}
+
+/* ==FOOTER */
+footer {
+	display: none;
+}
+
+/* ==HUMANMSG */
+.humanMsg, #humanMsgLog {
+	display: none !important;
+}
