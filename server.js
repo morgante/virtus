@@ -5,6 +5,8 @@ var express = require('express')
 		, request = require('request')
 		, mongoose = require('mongoose')
 		, _ = require('./public/lib/underscore')
+
+var fitbit = require('fitbit-js')(process.env.FITBIT_CONSUMER_KEY, process.env.FITBIT_CONSUMER_SECRET, 'http://localhost:' + process.env.PORT);
 		
 var pkg = require('./package.json')
 		, main = require('./routes/main')
@@ -34,7 +36,16 @@ app.configure(function() {
 });
 
 // set up routes
-app.get('/', main.index);
+// app.get('/', main.index);
+
+app.get('/', function(req, res) {
+	fitbit.getAccessToken(req, res, function(err, token) {
+		console.log(err, token);
+		if (token) {
+			res.send(token);
+		}
+	});
+});
 
 // start listening
 app.listen( process.env.PORT , function() {
