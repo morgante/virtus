@@ -9,6 +9,8 @@ var express = require('express')
 var pkg = require('./package.json')
 		, main = require('./routes/main')
 
+var goals = require('./routes/goals');
+
 var Fitbit = require('fitbit');
 var fitbit = new Fitbit(process.env.FITBIT_CONSUMER_KEY, process.env.FITBIT_CONSUMER_SECRET);
 
@@ -41,6 +43,7 @@ app.configure(function() {
 
 // set up routes
 app.get('/', main.index);
+app.get('/api/goals', goals.list);
 
 passport.use(new FitbitStrategy({
 	consumerKey: process.env.FITBIT_CONSUMER_KEY,
