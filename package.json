@@ -1,25 +1,23 @@
 {
   "name": "Virtus",
   "version": "0.1.0",
-  "dependencies": {
-    "async": ">= 0.0.0",
-    "ejs": ">= 0.0.0",
-    "ejs-locals": ">= 0.0.0",
-    "express": "3.x.x",
-    "fitbit": "0.0.5",
-    "mongoose": ">= 0.0.0",
-    "passport": "^0.2.0",
-    "passport-fitbit": "^0.1.2",
-    "request": ">= 0.0.0"
+  "description": "Always Be Creating",
+  "main": "index.js",
+  "scripts": {
+    "start": "bash start.sh"
   },
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morgante/virtus.git"
+  },
+  "author": "Morgante Pell",
+  "dependencies": {
+    "express": "^4.8.2"
   },
   "devDependencies": {
-    "gulp": "~3.5.5",
+    "browserify": "^5.9.1",
+    "gulp": "^3.8.7",
     "gulp-browserify": "^0.5.0",
-    "gulp-concat": "~2.2.0",
-    "gulp-sass": "0.7.1"
+    "gulp-sass": "^0.7.2"
   }
 }

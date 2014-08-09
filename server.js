@@ -1,10 +1,4 @@
-var express = require('express')
-		, http = require('http')
-		, url = require('url')
-		, async = require('async')
-		, request = require('request')
-		, mongoose = require('mongoose')
-		, _ = require('./public/lib/underscore')
+var express = require('express');
 		
 var pkg = require('./package.json')
 		, main = require('./routes/main')

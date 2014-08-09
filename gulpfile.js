@@ -22,15 +22,15 @@ gulp.task('scripts:watch', function () {
 /**
  * Compile Sass
  */
-gulp.task('sass:compile', function () {
-    gulp.src('./assets/stylesheets/*.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./public/css'));
-});
+// gulp.task('sass:compile', function () {
+//     gulp.src('./assets/stylesheets/*.scss')
+//         .pipe(sass())
+//         .pipe(gulp.dest('./public/css'));
+// });
 
-gulp.task('sass:watch', function () {
-    gulp.watch('./assets/stylesheets/**/*.scss', [ 'sass:compile' ]);
-});
+// gulp.task('sass:watch', function () {
+//     gulp.watch('./assets/stylesheets/**/*.scss', [ 'sass:compile' ]);
+// });
 
 gulp.task('compile', [ 'sass:compile', 'scripts:compile' ]);
 gulp.task('watch', [ 'sass:watch', 'scripts:watch' ]);
